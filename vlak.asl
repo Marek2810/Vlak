@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //0.74
 state("DOSBox",  "0.74") {
     byte Scena : 0x193A1A0, 0x2D27;
@@ -25,6 +26,12 @@ init
             case 0x1FAE000: version = "0.72"; break;
             default: version = "Unknown!"; break;
         }
+=======
+//0.72
+state("dosbox") {
+      byte Scena : 0x18BB3C0, 0x2BB7;
+      int isMoving : 0x18BB3C0, 0x27E8;
+>>>>>>> 70f9835360b20e900873b92aa35ec494f24cd24e
 }
 
 startup {
@@ -62,4 +69,8 @@ reset {
     if (old.Scena != 50 && old.Scena != current.Scena &&  current.Scena == 1) {
         return true;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 70f9835360b20e900873b92aa35ec494f24cd24e

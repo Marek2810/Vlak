@@ -1,3 +1,5 @@
+//Vlak autosplitter by Marek2810
+
 //0.74
 state("DOSBox",  "0.74") {
     byte Scena : 0x193A1A0, 0x2D27;
